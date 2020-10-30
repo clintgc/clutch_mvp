@@ -155,7 +155,7 @@ const playerStatsElement = playerData.map((element) => {
   })
   console.log(playerStatsElement);
   playerStatsElement.forEach(arrElement => {
-    playerStats.appendChild(arrElement);
+    sectionStats.appendChild(arrElement);
   });
 
 //<section class='Stats'>
