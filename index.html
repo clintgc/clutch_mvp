@@ -11,7 +11,9 @@
   <!-- If we omit the "defer" attribute, `index.js` will load and execute
   _before_ the rest of the HTML is parsed by the browser, which would be bad because
   the code inside `index.js` expects the page to be fully parsed (and the DOM fully built) -->
-  <script defer src="index.js"></script>
+  <script defer src="./components/index.js"></script>
+  <script defer src="./components/statsMaker.js"></script>
+
   <!-- We will often see script tags placed right before the closing body tag,
   it's a way of getting around the problem above without the need for "defer" -->
 </head>
