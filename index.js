@@ -125,7 +125,7 @@ function statMaker(dataObj){
     plusMinusP.textContent = `${dataObj.plusMinus}`;
 
     //append and nest parent and child elements
-    sectionStats.appendChild(playerStats);
+    //sectionStats.appendChild(playerStats);
     playerStats.appendChild(gamesPlayed);
     gamesPlayed.appendChild(gpPElement);
     gamesPlayed.appendChild(gpH3)
