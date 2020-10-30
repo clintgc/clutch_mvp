@@ -36,7 +36,7 @@ function statMaker(dataObj){
 
     //totalStat totalAssists div
     const totalAssists = document.createElement('div');
-    totalAssists.classList.add ='totalStat totalPoints'; 
+    totalAssists.classList.add ='totalStat totalAssists'; 
     //Total Assists
     const totalAssistsH3 = document.createElement('h3');
     totalAssistsH3.textContent = `${dataObj.assistsLabel}`;
@@ -46,7 +46,7 @@ function statMaker(dataObj){
 
     //totalStat plusMinus div
     const plusMinus = document.createElement('div');
-    plus.classList.add ='totalStat plusMinus'; 
+    plusMinus.classList.add ='totalStat plusMinus'; 
     //Plus minus
     const plusMinusH3 = document.createElement('h3');
     plusMinusH3.textContent = `${dataObj.plusMinusLabel}`;
