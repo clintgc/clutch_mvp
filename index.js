@@ -78,8 +78,8 @@ function statMaker(dataObj){
     const gamesPlayed = document.createElement('div');
     gamesPlayed.classList.add ='totalStat gamesPlayed';    
     //Games Played h3
-    const statsH3 = document.createElement('h3');
-    statsH3.textContent = `${dataObj.gpLabel}`;
+    const gpH3 = document.createElement('h3');
+    gpH3.textContent = `${dataObj.gpLabel}`;
     //Games Played <p>
     const gpPElement = document.createElement('p');
     gpPElement.textContent = `${dataObj.gamesPlayed}`;
@@ -94,7 +94,69 @@ function statMaker(dataObj){
     const totalPointsP = document.createElement('p');
     totalPointsP.textContent = `${dataObj.points}`;
 
+    //totalStat totalGoals div
+    const totalGoals = document.createElement('div');
+    totalGoals.classList.add ='totalStat totalGoals'; 
+    //Total Points
+    const totalGoalsH3 = document.createElement('h3');
+    totalGoalsH3.textContent = `${dataObj.goalsLabel}`;
+    //Points <p>
+    const totalGoalsP = document.createElement('p');
+    totalGoalsP.textContent = `${dataObj.goals}`;
+
+    //totalStat totalAssists div
+    const totalAssists = document.createElement('div');
+    totalAssists.classList.add ='totalStat totalPoints'; 
+    //Total Assists
+    const totalAssistsH3 = document.createElement('h3');
+    totalAssistsH3.textContent = `${dataObj.assistsLabel}`;
+    //Points <p>
+    const totalAssistsP = document.createElement('p');
+    totalAssistsP.textContent = `${dataObj.assists}`;
+
+    //totalStat plusMinus div
+    const plusMinus = document.createElement('div');
+    plus.classList.add ='totalStat plusMinus'; 
+    //Plus minus
+    const plusMinusH3 = document.createElement('h3');
+    plusMinusH3.textContent = `${dataObj.plusMinusLabel}`;
+    //plusMinus <p>
+    const plusMinusP = document.createElement('p');
+    plusMinusP.textContent = `${dataObj.plusMinus}`;
+
+    //append and nest parent and child elements
+    sectionStats.appendChild(playerStats);
+    playerStats.appendChild(gamesPlayed);
+    gamesPlayed.appendChild(gpPElement);
+    gamesPlayed.appendChild(gpH3)
+    gamesPlayed.appendChild(gpPElement);
+
+    playerStats.appendChild(totalPoints);
+    totalPoints.appendChild(totalPointsH3);
+    totalPoints.appendChild(totalPointsP);
+
+    playerStats.appendChild(totalGoals);
+    totalGoals.appendChild(totalGoalsH3);
+    totalGoals.appendChild(totalGoalsP);
+
+    playerStats.appendChild(totalAssists);
+    totalAssists.appendChild(totalAssistsH3);
+    totalAssists.appendChild(totalAssistsP);
+
+    playerStats.appendChild(plusMinus);
+    plusMinus.appendChild(plusMinusH3);
+    plusMinus.appendChild(plusMinusP);
+
+    return playerStats;
 }
+
+const playerStatsElement = playerData.map((element) => {
+    return statMaker(element);
+  })
+  console.log(playerStatsElement);
+  playerStatsElement.forEach(arrElement => {
+    playerStats.appendChild(arrElement);
+  });
 
 //<section class='Stats'>
 //   <div class='playerStats'>
