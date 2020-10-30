@@ -1,0 +1,294 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Clutch Sports</title>
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+
+  <!-- If we omit the "defer" attribute, `index.js` will load and execute
+  _before_ the rest of the HTML is parsed by the browser, which would be bad because
+  the code inside `index.js` expects the page to be fully parsed (and the DOM fully built) -->
+  <script defer src="index.js"></script>
+  <!-- We will often see script tags placed right before the closing body tag,
+  it's a way of getting around the problem above without the need for "defer" -->
+</head>
+
+<body>
+    <header class='header'>
+      <div class='boxNav'>
+        <h2>Clutch</h2>
+        <nav class='nav'>
+          <a class="nav-link" href="#">Athlete</a>
+          <a class="nav-link" href="#">Feed</a>
+          <a class="nav-link" href="#">Profile</a>
+        </nav>
+      </div> 
+    </header>
+
+    <section class='Card'>
+      <!-- <div class='playerCard'>
+        <div class="profile-image">
+          <img src="./img/shaeff_profile.jpg" alt="Shaeffer GC">
+        </div>
+        <div class='playerInfo'>
+          <h1>Shaeffer <br>Gordon-Carroll</h1>
+          <h2>Chicago Mission 12U</h2>
+          <p>Left Wing - #77</p>
+        </div>
+      </div> -->
+    </section>
+
+    <section class='Stats'>
+      <div class='playerStats'>
+        <div class='totalStat gamesPlayed' >
+          <h3>GP</h3>
+          <p>30</p>
+        </div>
+        <div class='totalStat totalPoints'>
+          <h3>Pts</h3>
+          <p>30</p>>
+        </div>
+        <div class='totalStat totalGoals'>
+          <h3>G</h3>
+          <p>30</p>
+        </div>
+        <div class='totalStat totalAssists'>
+          <h3>A</h3>
+          <p>30</p>
+        </div>
+        <div class='totalStat plusMinus'>
+          <h3>+/-</h3>
+          <p>30</p>
+        </div>
+      </div>
+      <div class='moreStats'>
+        <a class='numberVideos' href='#'>64 Videos</a>
+        <a class='masStats' href='#'>more stats</a>
+      </div>  
+    </section>
+
+    <section class='gameFilm'>
+      <div class="container">
+        <div class="gallery">
+          <div class="gallery-item" tabindex="0">
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+            <div class="gallery-item-info">
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 89</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 5</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-type">
+    
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+    
+            </div>
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 42</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-type">
+    
+              <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+    
+            </div>
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 38</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-type">
+    
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+    
+            </div>
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 47</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-type">
+    
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+    
+            </div>
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 52</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 4</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 66</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-type">
+    
+              <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
+    
+            </div>
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 45</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 41</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 0</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+    
+          <div class="gallery-item" tabindex="0">
+    
+            <img src="./img/shaeff_shooting.jpg" class="gallery-image" alt="">
+    
+            <div class="gallery-item-type">
+    
+              <span class="visually-hidden">Video</span><i class="fas fa-video" aria-hidden="true"></i>
+    
+            </div>
+    
+            <div class="gallery-item-info">
+    
+              <ul>
+                <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 30</li>
+                <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+              </ul>
+    
+            </div>
+    
+          </div>
+
+    </section>
+ <footer class ='footer'>
+
+ </footer>   
+</body>
+</html>

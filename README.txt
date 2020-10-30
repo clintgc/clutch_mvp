@@ -1,0 +1,3 @@
+Clutch_MVP is the sole property of Clint Gordon-Carroll.
+
+More to come ...
