@@ -172,6 +172,9 @@ a.nav-link {
     justify-content: center;
     align-items: center;
 }
+.playerStats :hover{
+    background-color: lightgreen;
+}
 .totalStat {
     width: 100px;
     height: 100px;
@@ -184,11 +187,12 @@ a.nav-link {
     justify-content: center;
     border-radius: 10px;
 }
+
 .totalStat h3 {
     font-size: 1.5rem;
 }
-.totalStat li {
-    font-size: 2.5rem;
+.totalStat p {
+    font-size: 3rem;
     padding-top: 2.5px;
 }
 .moreStats {

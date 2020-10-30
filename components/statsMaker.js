@@ -1,12 +1,19 @@
-const sectionStats = document.querySelector('.Stats');
+// function elementFactory(el, classes=[], text){
+//     const element = document.createElement(el)
+//     element.classList.add(...classes)
+//     element.innerHtml = text || null
+//     return element
+// }
 
+const sectionStats = document.querySelector('.Stats');
+console.log(sectionStats);
 function statMaker(dataObj){
     //playerStats div
     const playerStats = document.createElement('div');
-    playerStats.classList.add = 'playerStats';
+    playerStats.classList.add('playerStats');
     //totalStat gamesPlayed div
     const gamesPlayed = document.createElement('div');
-    gamesPlayed.classList.add ='totalStat gamesPlayed';    
+    gamesPlayed.classList.add('totalStat', 'gamesPlayed');    
     //Games Played h3
     const gpH3 = document.createElement('h3');
     gpH3.textContent = `${dataObj.gpLabel}`;
@@ -16,7 +23,8 @@ function statMaker(dataObj){
 
     //totalStat totalPoints div
     const totalPoints = document.createElement('div');
-    totalPoints.classList.add ='totalStat totalPoints'; 
+    totalPoints.classList.add('totalStat', 'totalPoints'); 
+
     //Total Points
     const totalPointsH3 = document.createElement('h3');
     totalPointsH3.textContent = `${dataObj.pointsLabel}`;
@@ -26,7 +34,7 @@ function statMaker(dataObj){
 
     //totalStat totalGoals div
     const totalGoals = document.createElement('div');
-    totalGoals.classList.add ='totalStat totalGoals'; 
+    totalGoals.classList.add('totalStat', 'totalGoals'); 
     //Total Points
     const totalGoalsH3 = document.createElement('h3');
     totalGoalsH3.textContent = `${dataObj.goalsLabel}`;
@@ -36,7 +44,7 @@ function statMaker(dataObj){
 
     //totalStat totalAssists div
     const totalAssists = document.createElement('div');
-    totalAssists.classList.add ='totalStat totalAssists'; 
+    totalAssists.classList.add('totalStat', 'totalAssists'); 
     //Total Assists
     const totalAssistsH3 = document.createElement('h3');
     totalAssistsH3.textContent = `${dataObj.assistsLabel}`;
@@ -46,7 +54,7 @@ function statMaker(dataObj){
 
     //totalStat plusMinus div
     const plusMinus = document.createElement('div');
-    plusMinus.classList.add ='totalStat plusMinus'; 
+    plusMinus.classList.add('totalStat', 'plusMinus'); 
     //Plus minus
     const plusMinusH3 = document.createElement('h3');
     plusMinusH3.textContent = `${dataObj.plusMinusLabel}`;
@@ -88,31 +96,22 @@ const playerStatsElement = playerData.map((element) => {
     sectionStats.appendChild(arrElement);
   });
 
-//<section class='Stats'>
-//   <div class='playerStats'>
-//     <div class='totalStat gamesPlayed' >
-//       <h3>GP</h3>
-//       <p>30</p>
-//     </div>
-//     <div class='totalStat totalPoints'>
-//       <h3>Pts</h3>
-//       <p>30</p>>
-//     </div>
-//     <div class='totalStat totalGoals'>
-//       <h3>G</h3>
-//       <p>30</p>
-//     </div>
-//     <div class='totalStat totalAssists'>
-//       <h3>A</h3>
-//       <p>30</p>
-//     </div>
-//     <div class='totalStat plusMinus'>
-//       <h3>+/-</h3>
-//       <p>30</p>
-//     </div>
-//   </div>
-//   <div class='moreStats'>
-//     <a class='numberVideos' href='#'>64 Videos</a>
-//     <a class='masStats' href='#'>more stats</a>
-//   </div>  
-//</section>
+function moreStatsMaker(){
+    //more stats div
+    const moreStats = document.createElement('div');
+    moreStats.classList.add('moreStats');
+    //<a class='numberVideos' href='#'>64 Videos</a>
+    const numberVideos = document.createElement('a');
+    numberVideos.setAttribute('href', '#');
+    numberVideos.textContent = '64'; 
+    //more stats
+    const moreStatsLink = document.createElement('a');
+    moreStatsLink.setAttribute('href', '#');
+    moreStatsLink.textContent = 'more stats'; 
+
+    sectionStats.appendChild(moreStats);
+    moreStats.appendChild(numberVideos);
+    moreStats.appendChild(moreStatsLink);
+}
+moreStatsMaker();
+
